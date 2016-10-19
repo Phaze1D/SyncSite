@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+$PATH = '/Users/david/Projects/NealsYard/WebsiteSync/lib/'
+
+require $PATH + 'init.rb'
+
+
+def main
+  sync_controller = SyncController.new
+  sync_controller.sync_databases
+end
+
+
+# Main Method Call
+main
